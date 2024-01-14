@@ -11,7 +11,7 @@ ros::NodeHandle n;
 ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
 ros::Rate loop_rate(10);
 int count = 0;
-while(ros::ok())
+while(ros::ok())   
 {    
 std_msgs::String msg;
 std::stringstream ss;
